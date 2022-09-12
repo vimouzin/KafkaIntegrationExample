@@ -20,10 +20,11 @@ def query_records():
     producer = KafkaProducer(bootstrap_servers='10.20.1.201:9092')
     producer.send('test', request.data)
     producer.flush()
-
+    print("hello")
     print(record)
     return "hello"
 
-app.run(debug=True)
+app.run(host='0.0.0.0')
+
 
 

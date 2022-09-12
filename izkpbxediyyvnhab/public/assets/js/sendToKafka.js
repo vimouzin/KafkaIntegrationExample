@@ -1,18 +1,18 @@
 function getInfo(){
 
    var data ={
-    "firstName":  document.getElementById("firstName").value ,
+    "Customer":  document.getElementById("firstName").value ,
     "lastName" : document.getElementById("lastName").value,
-    "phone" : document.getElementById("phone").value,
-    "email" : document.getElementById("email").value,
-    "state" : document.getElementById("state").value,
-    "city" : document.getElementById("city").value,
+    "ZIP" : document.getElementById("zip").value,
+    "ADDRESS" : document.getElementById("Address").value,
+    "STATE" : document.getElementById("state").value,
+    "CITY" : document.getElementById("city").value,
     "street" : document.getElementById("street").value,
     "income" : document.getElementById("income").value,
     "amount" : document.getElementById("loanAmount").value,
-    "state" : document.getElementById("state").value
+    "STATE" : document.getElementById("state").value
 }
-   postData("http://127.0.0.1:5000/llm",data)
+   postData("http://10.20.1.201:5000/llm",data)
 }
 
 
